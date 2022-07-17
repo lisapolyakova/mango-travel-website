@@ -11,7 +11,7 @@
     --title-color:#141414;
     --copyright-text-color:#444444;
     --button-bg-color:#f1c40f;
-    --button-bg-color-hover:#ffa500;
+    --button-bg-color-hover:rgb(255, 165, 0);
     --bgc-our-tours:#000;
     --header-banner-color:#fff;
     --border-color-input:#565656;
@@ -27,7 +27,7 @@ img {
     width: 100%;
 }
 .container {
-    max-width: 1200px;
+    max-width:980px;
     margin: auto;
 }
 .list-item__title,

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     background-color:var(--bgc-our-tours) ;
-    padding: 140px 0;
+    padding: 70px 0;
 }
 .main-features__title{
     align-self: center;
@@ -10,17 +10,17 @@
     margin-bottom: 28px;
 }
 .main-features__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
     margin: 0 20px;
 }
 .main-features__list-item {
-    width: 350px;
+    /* max-width: 100%; */
+    justify-self: center;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
 }
 .list-item__title {
     font-family: 'Dosis', sans-serif;
@@ -28,4 +28,16 @@
     font-weight: 700;  
     line-height: 33px; 
     color: var(--header-banner-color);
+}
+@media (min-width:770px){
+    .main-features__list {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+}
+@media (min-width:990px){
+    .main-features__list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+    }
 }

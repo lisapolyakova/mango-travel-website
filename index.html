@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="navigation-bar">
         <nav class="header-nav">
             <div class="nav-container container">
                 <div class="nav-menu">
-                    <img src="img/mango-travel-logo.png" alt="Logo of Mango Travel website" class="header-nav__logo" >
+                    <a href="#navigation-bar"><img src="img/mango-travel-logo.png" alt="Logo of Mango Travel website" class="header-nav__logo"></a>
                     <div class="header-nav__menu">
                         <a href="#features" class="header-nav__menu-item">Features</a>
                         <a href="#safari-travel" class="header-nav__menu-item">Safari travel video</a>
@@ -23,7 +23,9 @@
             </div>
         </nav>
         <div class="header-banner">
-            <p class="header-banner__title">Mango travel</p>
+            <div class="header-banner__title-wrapper">
+                <div class="header-banner__title">Mango<span>travel</span></div>
+            </div>
             <p class="header-banner__site-description">Spectacular safari tours in: Tanzania, Kenya, Rwanda</p>
         </div>
     </header>
@@ -73,17 +75,17 @@
         </section>
         <div class="main-video__safari-video" id="safari-travel">
             <div class="main-video__safari-video-container container">
-                <iframe width="800px" height="480px" src="https://www.youtube.com/embed/A5iHJThTKyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="safari-video-frame"></iframe>
+                <iframe width="560px" height="315px" src="https://www.youtube.com/embed/A5iHJThTKyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="safari-video-frame"></iframe>
             </div>
         </div>
         <section class="main__our-tours" id="our-tours">
-            <div class="main__our-tours-container container">
+            <div class="main__our-tours-container">
                 <h2 class="our-tours__header">Our tours</h2>
                 <div class="our-tours__list">
                     <article class="our-tours__card">
                         <img src="img/our-tours-tanzania.png" alt="Elephants running in safari">
                         <h3 class="our-tours__card-title">5 days in Tanzania</h3>
-                        <p class="card-features-list__list-title">What you will receive?</p>
+                        <p class="card-features-list__list-title">You will receive:</p>
                         <div class="our-tours__card-features-list">
                             <p class="card-features-list__list-item">Living in comfortable hotel with breakfast included.</p>
                             <p class="card-features-list__list-item">Perfect trip around Tanzania attractions.</p>
@@ -95,7 +97,7 @@
                     <article class="our-tours__card">
                         <img src="img/our-tours-kenya.png" alt="Nature of Kenya safari">
                         <h3 class="our-tours__card-title">Amazing week in Kenya</h3>
-                        <p class="card-features-list__list-title">What you will receive?</p>
+                        <p class="card-features-list__list-title">You will receive:</p>
                         <div class="our-tours__card-features-list">
                             <p class="card-features-list__list-item">Living in comfortable hotel with breakfast included.</p>
                             <p class="card-features-list__list-item">Perfect trip around Kenya attractions.</p>
@@ -107,7 +109,7 @@
                     <article class="our-tours__card">
                         <img src="img/our-tours-rwanda.png" alt="Wildebeests photo in Rwanda safari">
                         <h3 class="our-tours__card-title">Amboseli Park in Rwanda</h3>
-                        <p class="card-features-list__list-title">What you will receive?</p>
+                        <p class="card-features-list__list-title">You will receive:</p>
                         <div class="our-tours__card-features-list">
                             <p class="card-features-list__list-item">Living in comfortable hotel with breakfast included.</p>
                             <p class="card-features-list__list-item">Perfect trip around Rwanda attractions.</p>
@@ -123,7 +125,7 @@
     <footer class="footer">
         <div class="footer-container container">
             <div class="footer-logo">
-                <img src="img/mango-travel-logo.png" alt="Mango Travel Logo" class="footer_logo-image">
+                <a href=""><img src="img/mango-travel-logo.png" alt="Mango Travel Logo" class="footer_logo-image"></a> 
             </div>
             <div class="footer-menu__additional-info">
                 <a href="#" class="additional-info__menu-item">Privacy</a>

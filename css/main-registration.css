@@ -1,17 +1,19 @@
 .main__registration-bg {
     background-color:var(--bgc-our-tours) ;
-    padding-top: 100px;
+    padding: 50px 20px;
 }
 .main__registration-card{
-    width: 570px;
+    max-width: 100%;
     background-color: var(--main-registration-form);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    row-gap: 10px;
+    margin: 0 20px;
+    padding: 10px;
     border: 3px solid var(--border-color-input);
     border-radius: 8px;
-    color:var(--header-banner-color) ;
+    color:var(--header-banner-color);
 }
 .registration__title{
     font-family: 'Dosis', sans-serif;
@@ -19,13 +21,13 @@
     color: var(--button-bg-color);
     line-height: 38px;
 }
-.registration__form {
-    /* display: flex;
+/* .registration__form {
+    display: flex;
     flex-direction: column;
     flex: 1;
     width: 100%;
-    margin: auto; */
-}
+    margin: auto;
+} */
 .registration__form input{
  width: 100%;
  padding: 19px 21px;

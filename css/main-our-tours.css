@@ -1,29 +1,33 @@
 .main__our-tours {
-    background-color: var(--bgc-our-tours);
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(255, 165, 0, 1) 100%);
 }
 .main__our-tours-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 70px 0;
+    padding: 50px 0;
+    margin: 0 20px;
 }
 .our-tours__list{
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    /* margin: 50px 20px; */
 }
 .our-tours__card {
-    width: 360px;
+    /* width: 360px; */
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
     justify-items: flex-start;
-    padding: 5px;
+    padding: 10px;
 }
 .our-tours__card:hover{
-    border: 3px solid rgba(255, 255, 255, 0.1);
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 8px;
+    box-sizing: border-box;
+    box-shadow: rgba(255, 165, 0, 0.4) 3px 6px 9px 3px;
+}
+.our-tours__card:hover > .our-tours__card-features-list{
+    color:var(--header-banner-color) ;
 }
 .our-tours__header {
     color: var(--button-bg-color);
@@ -34,4 +38,20 @@
 }
 .card-features-list__list-title{
     color: var(--header-banner-color);
+}
+.card-features-list__list-item::before{
+    content: "\1F5F8";
+    padding-right: 5px;
+}
+@media (min-width:770px) {
+    .our-tours__list{
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap:20px;
+    }
+}
+@media (min-width:990px) {
+    .our-tours__list{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap:20px;
+    }
 }
